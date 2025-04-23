@@ -2,6 +2,8 @@
 import React from "react";
 import { useState } from "react";
 const App: React.FC = () => {
+  const [submitted, setSubmitted] = useState(false);
+
   const currentYear: number = new Date().getFullYear();
 
   return (
