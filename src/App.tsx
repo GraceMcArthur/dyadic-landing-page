@@ -26,26 +26,27 @@ const App: React.FC = () => {
         </p>
 <div className="max-w-md mx-auto mt-6">
   {!submitted ? (
-    <form
-      action="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
-      method="POST"
-      target="hidden_iframe"
-      onSubmit={() => setSubmitted(true)}
-      className="flex flex-col sm:flex-row justify-center gap-3"
-    >
-      <input
-        type="email"
-        name="email"
-        required
-        placeholder="Enter your email"
-        className="p-3 rounded-xl border border-white w-full text-brand-primary bg-white"
-      />
-      <button
-        type="submit"
-        className="bg-white text-brand-primary px-6 py-3 rounded-xl hover:bg-brand-lavender transition"
-      >
-        Get Early Access
-      </button>
+ <form
+  action="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
+  method="POST"
+  target="_blank"
+  className="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto"
+>
+  <input
+    type="email"
+    name="email"  //
+    required
+    placeholder="Enter your email"
+    className="p-3 rounded-xl border border-white w-full text-brand-primary bg-white"
+  />
+  <button
+    type="submit"
+    className="bg-white text-brand-primary px-6 py-3 rounded-xl hover:bg-brand-lavender transition"
+  >
+    Get Early Access
+  </button>
+</form>
+
       <iframe
         name="hidden_iframe"
         style={{ display: "none" }}
@@ -170,28 +171,27 @@ const App: React.FC = () => {
           Sign up to get early access to Dyadic, bonus content, and plenty to add to your relationship toolkit.
         </p>
       {!submittedBottom ? (
-  <form
-    action="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
-    method="POST"
-    target="hidden_iframe_bottom"
-    onSubmit={() => setSubmittedBottom(true)}
-    className="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto"
+<form
+  action="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
+  method="POST"
+  target="_blank"
+  className="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto"
+>
+  <input
+    type="email"
+    name="email"  // ✅ This is what Beehiiv needs
+    required
+    placeholder="Enter your email"
+    className="p-3 rounded-xl border border-white w-full text-brand-primary bg-white"
+  />
+  <button
+    type="submit"
+    className="bg-white text-brand-primary px-6 py-3 rounded-xl hover:bg-brand-lavender transition"
   >
-    <input
-      type="email"
-      name="email"
-      required
-      placeholder="Enter your email"
-      className="p-3 rounded-xl border border-white w-full text-brand-primary bg-white"
-    />
-    <button
-      type="submit"
-      className="bg-white text-brand-primary px-6 py-3 rounded-xl hover:bg-brand-lavender transition"
-    >
-      Get Early Access
-    </button>
-    <iframe name="hidden_iframe_bottom" style={{ display: "none" }}></iframe>
-  </form>
+    Get Early Access
+  </button>
+</form>
+
 ) : (
   <p className="text-white font-semibold text-lg mt-4">
     🎉 You're on the waitlist! We'll be in touch soon.
