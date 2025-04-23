@@ -143,11 +143,7 @@ const App: React.FC = () => {
           </div>
         </div>
       </section>
-
- 
       
-
-</section>
       <footer className="text-center text-sm text-brand-primary py-6 font-body">
         © {currentYear} Dyadic. All rights reserved.
       </footer>
