@@ -56,6 +56,7 @@ const App: React.FC = () => {
   )}
 </div>
 
+
 </section>
 
       {/* How It Works Section */}
@@ -169,6 +170,7 @@ const App: React.FC = () => {
     Sign up to get early access to Dyadic, bonus content, and plenty to add to your relationship toolkit.
   </p>
   <div>
+ <div>
   {!submittedBottom ? (
     <form
       action="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
