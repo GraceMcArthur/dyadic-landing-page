@@ -2,38 +2,9 @@
 import React, { useState } from "react";
 
 const App: React.FC = () => {
-  const [email, setEmail] = useState("");
-  const [emailBottom, setEmailBottom] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-  const [submittedBottom, setSubmittedBottom] = useState(false);
+
 
   const currentYear: number = new Date().getFullYear();
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const res = await fetch("https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: new URLSearchParams({ email }),
-    });
-    if (res.ok) setSubmitted(true);
-  };
-
-  const handleSubmitBottom = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const res = await fetch("https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: new URLSearchParams({ email: emailBottom }),
-    });
-    if (res.ok) setSubmittedBottom(true);
-  };
-
-
 
   return (
     <div className="min-h-screen bg-brand-blush text-brand-primary font-body">
@@ -52,29 +23,28 @@ const App: React.FC = () => {
           stronger, more resilient relationships.
         </p>
 <div className="max-w-md mx-auto mt-6">
-  {!submitted ? (
-    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto">
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-        placeholder="Enter your email"
-        className="p-3 rounded-xl border border-white w-full text-brand-primary bg-white"
-      />
-      <button
-        type="submit"
-        className="bg-white text-brand-primary px-6 py-3 rounded-xl hover:bg-brand-lavender transition"
-      >
-        Get Early Access
-      </button>
-    </form>
-  ) : (
-    <p className="text-brand-primary font-semibold text-lg mt-4">
-      🎉 You're on the waitlist! We'll be in touch soon.
-    </p>
-  )}
+ <form
+  action="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
+  method="POST"
+  target="_blank"
+  className="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto"
+>
+  <input
+    type="email"
+    name="email"
+    required
+    placeholder="Enter your email"
+    className="p-3 rounded-xl border border-white w-full text-brand-primary bg-white"
+  />
+  <button
+    type="submit"
+    className="bg-white text-brand-primary px-6 py-3 rounded-xl hover:bg-brand-lavender transition"
+  >
+    Get Early Access
+  </button>
+</form>
 </div>
+        
 
 
 </section>
@@ -190,35 +160,33 @@ const App: React.FC = () => {
     Sign up to get early access to Dyadic, bonus content, and plenty to add to your relationship toolkit.
   </p>
   <div>
-  {!submittedBottom ? (
-    <form onSubmit={handleSubmitBottom} className="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto">
-      <input
-        type="email"
-        value={emailBottom}
-        onChange={(e) => setEmailBottom(e.target.value)}
-        required
-        placeholder="Enter your email"
-        className="p-3 rounded-xl border border-white w-full text-brand-primary bg-white"
-      />
-      <button
-        type="submit"
-        className="bg-white text-brand-primary px-6 py-3 rounded-xl hover:bg-brand-lavender transition"
-      >
-        Get Early Access
-      </button>
-    </form>
-  ) : (
-    <p className="text-white font-semibold text-lg mt-4">
-      🎉 You're on the waitlist! We'll be in touch soon.
-    </p>
-  )}
+  <form
+  action="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
+  method="POST"
+  target="_blank"
+  className="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto"
+>
+  <input
+    type="email"
+    name="email"
+    required
+    placeholder="Enter your email"
+    className="p-3 rounded-xl border border-white w-full text-brand-primary bg-white"
+  />
+  <button
+    type="submit"
+    className="bg-white text-brand-primary px-6 py-3 rounded-xl hover:bg-brand-lavender transition"
+  >
+    Get Early Access
+  </button>
+</form>
 </div>
 
 </section>
       <footer className="text-center text-sm text-brand-primary py-6 font-body">
         © {currentYear} Dyadic. All rights reserved.
       </footer>
-       <iframe name="hidden_iframe" style={{ display: "none" }}></iframe>
+  
 
     </div>
   );
