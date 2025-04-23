@@ -29,7 +29,7 @@ const App: React.FC = () => {
   <form
     action="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
     method="POST"
-    target="hidden_iframe"
+   target="_blank"
     onSubmit={() => setSubmitted(true)}
     className="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto"
   >
@@ -171,7 +171,7 @@ const App: React.FC = () => {
   <form
     action="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
     method="POST"
-    target="hidden_iframe_bottom"
+    target="_blank"
     onSubmit={() => setSubmittedBottom(true)}
     className="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto"
   >
