@@ -35,7 +35,7 @@ const App: React.FC = () => {
     }}
   ></iframe>
 </div>
-
+</section>
 
       {/* How It Works Section */}
       <section className="flex flex-col items-center justify-center px-6 py-24 bg-brand-sage text-center text-brand-primary">
