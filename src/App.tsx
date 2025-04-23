@@ -22,30 +22,22 @@ const App: React.FC = () => {
           clear, actionable tools so you can cut through the noise and build
           stronger, more resilient relationships.
         </p>
-<div className="max-w-md mx-auto mt-6">
- <form
-  action="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
-  method="POST"
-  target="_blank"
-  className="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto"
->
-  <input
-    type="email"
-    name="email"
-    required
-    placeholder="Enter your email"
-    className="p-3 rounded-xl border border-white w-full text-brand-primary bg-white"
-  />
-  <button
-    type="submit"
-    className="bg-white text-brand-primary px-6 py-3 rounded-xl hover:bg-brand-lavender transition"
-  >
-    Get Early Access
-  </button>
-</form>
+<div className="flex justify-center mt-6">
+  <iframe
+    src="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019?slim=true"
+    data-test-id="beehiiv-embed"
+    height="52"
+    frameBorder="0"
+    scrolling="no"
+    style={{
+      margin: 0,
+      borderRadius: '12px',
+      backgroundColor: 'transparent',
+      width: '100%',
+      maxWidth: '500px',
+    }}
+  ></iframe>
 </div>
-        
-
 
 </section>
 
@@ -160,27 +152,24 @@ const App: React.FC = () => {
     Sign up to get early access to Dyadic, bonus content, and plenty to add to your relationship toolkit.
   </p>
   <div>
-  <form
-  action="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
-  method="POST"
-  target="_blank"
-  className="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto"
->
-  <input
-    type="email"
-    name="email"
-    required
-    placeholder="Enter your email"
-    className="p-3 rounded-xl border border-white w-full text-brand-primary bg-white"
-  />
-  <button
-    type="submit"
-    className="bg-white text-brand-primary px-6 py-3 rounded-xl hover:bg-brand-lavender transition"
-  >
-    Get Early Access
-  </button>
-</form>
+  <div className="flex justify-center mt-6">
+  <iframe
+    src="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019?slim=true"
+    data-test-id="beehiiv-embed"
+    height="52"
+    frameBorder="0"
+    scrolling="no"
+    style={{
+      margin: 0,
+      borderRadius: '12px',
+      backgroundColor: 'transparent',
+      width: '100%',
+      maxWidth: '500px',
+    }}
+  ></iframe>
 </div>
+</div>
+      
 
 </section>
       <footer className="text-center text-sm text-brand-primary py-6 font-body">
