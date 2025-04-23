@@ -19,23 +19,23 @@ const App: React.FC = () => {
           clear, actionable tools so you can cut through the noise and build
           stronger, more resilient relationships.
         </p>
+<div className="flex justify-center mt-6">
+  <iframe
+    src="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019?slim=true"
+    data-test-id="beehiiv-embed"
+    height="52"
+    frameBorder="0"
+    scrolling="no"
+    style={{
+      margin: 0,
+      borderRadius: '12px',
+      backgroundColor: 'transparent',
+      width: '100%',
+      maxWidth: '500px',
+    }}
+  ></iframe>
+</div>
 
-        <div className="max-w-md mx-auto text-left">
-          <form className="flex flex-col sm:flex-row justify-center gap-3">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="p-3 rounded-xl border border-brand-lavender w-full text-brand-primary bg-white"
-            />
-            <button className="bg-brand-primary text-white px-6 py-3 rounded-xl hover:bg-brand-lavender transition">
-              Join the Waitlist
-            </button>
-          </form>
-          <p className="text-xs text-brand-primary mt-2 italic">
-            P.S. We promise we won't spam you!
-          </p>
-        </div>
-      </section>
 
       {/* How It Works Section */}
       <section className="flex flex-col items-center justify-center px-6 py-24 bg-brand-sage text-center text-brand-primary">
