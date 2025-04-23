@@ -167,8 +167,7 @@ const App: React.FC = () => {
           Ready to grow in your relationships?
         </h2>
         <p className="mb-6 max-w-xl mx-auto font-body">
-          Sign up to get early access to Dyadic, bonus content, and tips on
-          building relationship skills that work.
+          Sign up to get early access to Dyadic, bonus content, and plenty to add to your relationship toolkit.
         </p>
       {!submittedBottom ? (
   <form
