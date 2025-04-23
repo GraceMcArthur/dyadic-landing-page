@@ -46,12 +46,6 @@ const App: React.FC = () => {
     Get Early Access
   </button>
 </form>
-
-      <iframe
-        name="hidden_iframe"
-        style={{ display: "none" }}
-      ></iframe>
-    </form>
   ) : (
     <p className="text-brand-primary font-semibold text-lg mt-4">
       🎉 You're on the waitlist! We'll be in touch soon.
@@ -163,42 +157,42 @@ const App: React.FC = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="bg-brand-primary text-white text-center py-12 px-6">
-        <h2 className="text-3xl font-heading font-semibold mb-4">
-          Ready to grow in your relationships?
-        </h2>
-        <p className="mb-6 max-w-xl mx-auto font-body">
-          Sign up to get early access to Dyadic, bonus content, and plenty to add to your relationship toolkit.
-        </p>
-      {!submittedBottom ? (
-<form
-  action="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
-  method="POST"
-  target="_blank"
-  className="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto"
->
-  <input
-    type="email"
-    name="email"  // ✅ This is what Beehiiv needs
-    required
-    placeholder="Enter your email"
-    className="p-3 rounded-xl border border-white w-full text-brand-primary bg-white"
-  />
-  <button
-    type="submit"
-    className="bg-white text-brand-primary px-6 py-3 rounded-xl hover:bg-brand-lavender transition"
-  >
-    Get Early Access
-  </button>
-</form>
-
-) : (
-  <p className="text-white font-semibold text-lg mt-4">
-    🎉 You're on the waitlist! We'll be in touch soon.
+     <section className="bg-brand-primary text-white text-center py-12 px-6">
+  <h2 className="text-3xl font-heading font-semibold mb-4">
+    Ready to grow in your relationships?
+  </h2>
+  <p className="mb-6 max-w-xl mx-auto font-body">
+    Sign up to get early access to Dyadic, bonus content, and plenty to add to your relationship toolkit.
   </p>
-)}
- </section>
-
+  <div>
+    {!submittedBottom ? (
+      <form
+        action="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
+        method="POST"
+        target="_blank"
+        className="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto"
+      >
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Enter your email"
+          className="p-3 rounded-xl border border-white w-full text-brand-primary bg-white"
+        />
+        <button
+          type="submit"
+          className="bg-white text-brand-primary px-6 py-3 rounded-xl hover:bg-brand-lavender transition"
+        >
+          Get Early Access
+        </button>
+      </form>
+    ) : (
+      <p className="text-white font-semibold text-lg mt-4">
+        🎉 You're on the waitlist! We'll be in touch soon.
+      </p>
+    )}
+  </div>
+</section>
       <footer className="text-center text-sm text-brand-primary py-6 font-body">
         © {currentYear} Dyadic. All rights reserved.
       </footer>
