@@ -144,32 +144,7 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-     <section className="bg-brand-primary text-white text-center py-12 px-6">
-  <h2 className="text-3xl font-heading font-semibold mb-4">
-    Ready to grow in your relationships?
-  </h2>
-  <p className="mb-6 max-w-xl mx-auto font-body">
-    Sign up to get early access to Dyadic, bonus content, and plenty to add to your relationship toolkit.
-  </p>
-  <div>
-  <div className="flex justify-center mt-6">
-  <iframe
-    src="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019?slim=true"
-    data-test-id="beehiiv-embed"
-    height="52"
-    frameBorder="0"
-    scrolling="no"
-    style={{
-      margin: 0,
-      borderRadius: '12px',
-      backgroundColor: 'transparent',
-      width: '100%',
-      maxWidth: '500px',
-    }}
-  ></iframe>
-</div>
-</div>
+ 
       
 
 </section>
