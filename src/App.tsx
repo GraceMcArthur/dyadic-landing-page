@@ -26,7 +26,7 @@ const App: React.FC = () => {
   <iframe
     src="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
     data-test-id="beehiiv-embed"
-    height="160"
+    height="180"
     frameBorder="0"
     scrolling="no"
     style={{
