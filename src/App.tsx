@@ -1,5 +1,6 @@
 //trigger rebuild
 import React from "react";
+import { useState } from "react";
 const App: React.FC = () => {
   const currentYear: number = new Date().getFullYear();
 
@@ -19,21 +20,38 @@ const App: React.FC = () => {
           clear, actionable tools so you can cut through the noise and build
           stronger, more resilient relationships.
         </p>
-<div className="flex justify-center mt-6">
-  <iframe
-    src="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019?slim=true"
-    data-test-id="beehiiv-embed"
-    height="52"
-    frameBorder="0"
-    scrolling="no"
-    style={{
-      margin: 0,
-      borderRadius: '12px',
-      backgroundColor: 'transparent',
-      width: '100%',
-      maxWidth: '500px',
-    }}
-  ></iframe>
+<div className="max-w-md mx-auto mt-6">
+  {!submitted ? (
+    <form
+      action="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
+      method="POST"
+      target="hidden_iframe"
+      onSubmit={() => setSubmitted(true)}
+      className="flex flex-col sm:flex-row justify-center gap-3"
+    >
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="Enter your email"
+        className="p-3 rounded-xl border border-white w-full text-brand-primary bg-white"
+      />
+      <button
+        type="submit"
+        className="bg-white text-brand-primary px-6 py-3 rounded-xl hover:bg-brand-lavender transition"
+      >
+        Get Early Access
+      </button>
+      <iframe
+        name="hidden_iframe"
+        style={{ display: "none" }}
+      ></iframe>
+    </form>
+  ) : (
+    <p className="text-brand-primary font-semibold text-lg mt-4">
+      🎉 You're on the waitlist! We'll be in touch soon.
+    </p>
+  )}
 </div>
 </section>
 
