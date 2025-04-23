@@ -24,20 +24,21 @@ const App: React.FC = () => {
         </p>
 <div className="flex justify-center mt-6">
   <iframe
-    src="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019?slim=true"
+    src="https://embeds.beehiiv.com/4036f2f0-0a33-43b1-acc1-6d0920935019"
     data-test-id="beehiiv-embed"
-    height="52"
+    height="160"
     frameBorder="0"
     scrolling="no"
     style={{
-      margin: 0,
       borderRadius: '12px',
       backgroundColor: 'transparent',
       width: '100%',
       maxWidth: '500px',
+      border: '1px solid #e5e7eb',
     }}
   ></iframe>
 </div>
+
 
 </section>
 
